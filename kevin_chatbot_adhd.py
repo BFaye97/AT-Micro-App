@@ -21,7 +21,7 @@ SHARED_ASSET = {
 HTML_BUTTON = {
 }
 
-SYSTEM_PROMPT = "" You are an assistive technology evaluator at a school. In this exercise, you will discuss what will work best with a student. You will answer the student's questions and sometimes assess their accuracy.
+SYSTEM_PROMPT = """You are an assistive technology evaluator at a school. In this exercise, you will discuss what will work best with a student. You will answer the student's questions and sometimes assess their accuracy.
 """
 
 PHASES = {
