@@ -185,10 +185,10 @@ PAGE_CONFIG = {
     "page_title": "Assistive Technology Evaluation Chatbot",
     "page_icon": "🍅",
     "layout": "centered",
-    "initial_sidebar_state": "collapsed"
+    "initial_sidebar_state": "hidden"
 }
 
-SIDEBAR_HIDDEN = False
+SIDEBAR_HIDDEN = True
 
 from core_logic.main import main
 if __name__ == "__main__":
