@@ -185,7 +185,7 @@ PAGE_CONFIG = {
     "page_title": "Assistive Technology Evaluation Chatbot",
     "page_icon": "🍅",
     "layout": "centered",
-    "initial_sidebar_state": "delete"
+    "initial_sidebar_state": "collpased"
 }
 
 SIDEBAR_HIDDEN = False
