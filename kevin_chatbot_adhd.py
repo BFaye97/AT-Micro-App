@@ -188,7 +188,7 @@ PAGE_CONFIG = {
     "initial_sidebar_state": "hidden"
 }
 
-SIDEBAR_HIDDEN = FALSE
+SIDEBAR_HIDDEN = True
 
 from core_logic.main import main
 if __name__ == "__main__":
