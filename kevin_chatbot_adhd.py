@@ -184,12 +184,23 @@ SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 PAGE_CONFIG = {
     "page_title": "Assistive Technology Evaluation Chatbot",
     "page_icon": "🍅",
-    "layout": "centered",
-    "initial_sidebar_state": "collapsed"
+    "layout": "wide",                     # Use 'wide' layout for more space
+    "initial_sidebar_state": "collapsed"  # Start with sidebar collapsed 
 }
 
 SIDEBAR_HIDDEN = True
 
 from core_logic.main import main
+import streamlit as st
+# Hide "Manage App" button and footer
+st.markdown( 
+    """
+    <style>
+        #MainMenu {visibility: hidden;}   /* Hides the top-right menu */
+        footer {visibility: hidden;}      /* Hides the footer */
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 if __name__ == "__main__":
     main(config=globals())
