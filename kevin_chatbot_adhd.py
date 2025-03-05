@@ -184,8 +184,8 @@ SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 PAGE_CONFIG = {
     "page_title": "Assistive Technology Evaluation Chatbot",
     "page_icon": "🍅",
-    "layout": "wide",                     # Use 'wide' layout for more space
-    "initial_sidebar_state": "collapsed"  # Start with sidebar collapsed 
+    "layout": "wide", 
+    "initial_sidebar_state": "collapsed" 
 }
 
 SIDEBAR_HIDDEN = True
