@@ -192,12 +192,14 @@ SIDEBAR_HIDDEN = True
 
 from core_logic.main import main
 import streamlit as st
-# Hide "Manage App" button and footer
+## Hide "Manage App" button and footer
 st.markdown( 
     """
     <style>
-        #MainMenu {visibility: hidden;}   /* Hides the top-right menu */
-        footer {visibility: hidden;}      /* Hides the footer */
+        #MainMenu {visibility: hidden;}   
+        ## Hides the top-right menu 
+        footer {visibility: hidden;}      
+        ## Hides the footer
     </style>
     """,
     unsafe_allow_html=True,
