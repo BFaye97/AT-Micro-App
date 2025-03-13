@@ -42,9 +42,9 @@ PHASES = {
             },
             "chat": {
                 "type": "chat_input",
-                "max_messages": 30,
+                "max_messages": 60,
                 "placeholder": "Ask Kevin your questions to better understand what to recommend...",
-                "initial_assistant_message": "Hi Teacher, I need help with being able to keep up in class. Could you help?"
+                "initial_assistant_message": "Hi Teacher, I need help with keeping up in class. Could you help?"
             }
         },
         "phase_instructions": """For this chat, you play the role of a 16-year-old boy named Kevin with a history of ADHD and notetaking issues. The user is playing the role of an assistive technology evaluator. The evaluator will ask you questions, and you will respond with a short answer.
