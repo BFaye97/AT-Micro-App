@@ -30,7 +30,7 @@ PHASES = {
         "fields": {
             "intro": {
                 "type": "markdown",
-                "body": """<p>Kevin is a transfer student at your school. He has been diagnosed with Attention-Deficit/Hyperactivity Disorder. He struggles to focus in class and struggles to keep up with notetaking.  You only have <strong>60 minutes</strong> to assess Kevin and determine what classroom accommodations might help him. For this simulation, that means you'll be able to ask him up to 60 questions.</p>""",
+                "body": """<p>Kevin is a transfer student at your school. He has been diagnosed with Attention-Deficit/Hyperactivity Disorder. He struggles to focus in class and struggles to keep up with notetaking.  You only have <strong>30 minutes</strong> to assess Kevin and determine what classroom accommodations might help him. For this simulation, that means you'll be able to ask him up to 30 questions.</p>""",
                 "unsafe_allow_html": True,
             },
             "patient_image": {
@@ -38,16 +38,16 @@ PHASES = {
                 "decorative": True,
                 "width": 300,
                 "image": "app_images/kevin.webp",
-                "caption": "",
+                "caption": "Your transfer student, Kevin, is here for an assistive technology evaluation.",
             },
             "chat": {
                 "type": "chat_input",
-                "max_messages": 60,
+                "max_messages": 30,
                 "placeholder": "Ask Kevin your questions to better understand what to recommend...",
-                "initial_assistant_message": "Hi Teacher, I need help with keeping up in class. Could you help?"
+                "initial_assistant_message": "Hi Teacher, I need help with being able to keep up in class. Could you help?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 16 year old kid named Kevin. The user is playing the role of an assistive technology evaluator. The evaluator will ask you questions, and you will respond with a short answer.
+        "phase_instructions": """For this chat, you play the role of a 16-year-old boy named Kevin with a history of ADHD and notetaking issues. The user is playing the role of an assistive technology evaluator. The evaluator will ask you questions, and you will respond with a short answer.
         Here is more information about Kevin:
         Here is the information for your role:
 Student Name: Kevin
@@ -102,7 +102,7 @@ Chief Complaint: Difficulty staying focused and has difficulty keeping up with n
         2. Whether the evaluator has an appropriate manner and makes the student feel comfortable. 
         3. Whether the evaluator is staying on topic.
 
-        Begin your response with "Here is some feedback on your chat with Kevin:"
+        Begin your response with "Here is some feedback on your chat with Melissa:"
         """,
         "ai_response": True,
         "allow_skip": False,
@@ -114,7 +114,7 @@ Chief Complaint: Difficulty staying focused and has difficulty keeping up with n
         "fields": {
             "primary_complaint": {
                 "type": "text_input",
-                "label": "What is the Kevin's primary issue?",
+                "label": "What is the user's primary complaint?",
             },
             "diagnosis": {
                 "type": "text_area",
@@ -152,7 +152,7 @@ Chief Complaint: Difficulty staying focused and has difficulty keeping up with n
     a. Spirometry to assess for COPD or restrictive lung disease.
 4. AIMSweb screening assessment:
     a. To assess any cardiac involvement, such as ischemia or arrhythmia.""",
-        "user_prompt": "Kevin's primary issue is: {primary_complaint}. I believe her diagnosis is: {diagnosis}",
+        "user_prompt": "Melissa's primary complaint is: {primary_complaint}. I believe her diagnosis is: {diagnosis}",
         "ai_response": True,
         
         "scored_phase": True,
@@ -183,14 +183,13 @@ SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 
 PAGE_CONFIG = {
     "page_title": "Assistive Technology Evaluation Chatbot",
-    "page_icon": "🍅",
-    "layout": "centered", 
-    "initial_sidebar_state": "collapsed" 
+    "page_icon": "✍️",
+    "layout": "centered",
+    "initial_sidebar_state": "collapsed"
 }
 
-SIDEBAR_HIDDEN = True
+SIDEBAR_HIDDEN = False
 
 from core_logic.main import main
-
 if __name__ == "__main__":
     main(config=globals())
