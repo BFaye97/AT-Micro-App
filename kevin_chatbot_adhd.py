@@ -38,7 +38,7 @@ PHASES = {
                 "decorative": True,
                 "width": 300,
                 "image": "app_images/kevin.webp",
-                "caption": "Your transfer student, Kevin, is here for an assistive technology evaluation.",
+                "caption": "Your transfer student, Kevin, is here for an assistive technology evaluation. Above is a picture of Kevin. He has curly hair, medium brown skin, dressed in a lab coat holding glass bottle filled with water. Looking off into the distance.",
             },
             "chat": {
                 "type": "chat_input",
