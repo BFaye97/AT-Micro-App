@@ -38,7 +38,7 @@ PHASES = {
                 "decorative": True,
                 "width": 300,
                 "image": "app_images/kevin.webp",
-                "caption": "Your transfer student, Kevin, is here for an assistive technology evaluation.",
+                "caption": "",
             },
             "chat": {
                 "type": "chat_input",
