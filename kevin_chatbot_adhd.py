@@ -1,10 +1,13 @@
-APP_URL = "https://kevinatevaluation.streamlit.app/"
-APP_IMAGE = "clinical_chatbot.webp"
+APP_URL = "https://kevinatevaluation-v1.streamlit.app/"
+APP_IMAGE = "at-chatbot-learning.webp"
 PUBLISHED = True
 
-APP_TITLE = "Assistive Technology Evaluation Chatbot"
+## Set the API key and model name
+MODEL="gpt-4o"
+
+APP_TITLE = "Kevin's Assistive Technology Evaluation "
 APP_INTRO = """
-In this interactive exercise, you will engage with a student chatbot that will help you understand a student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accommodations.
+In this interactive exercise, you will engage with a chatbot student with ADHD that will help you understand a student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accommodations.
 """
 
 APP_HOW_IT_WORKS = """
@@ -12,7 +15,7 @@ This app provides an interactive platform to work with an AI chatbot.
 
 The chatbot has been provided with a student history and a list of functional limitations. Your job is to determine the primary limitations and provide recommendations.
 
-The user can have a free-form conversation with the chatbot to clarify their AT needs. Then, they will input their primary complaint and recommendations.
+The user can have a free-form conversation with the chatbot to clarify their AT needs. Then, they will input their functional limitations and recommendations.
  """
 
 SHARED_ASSET = {
@@ -188,8 +191,9 @@ PAGE_CONFIG = {
     "initial_sidebar_state": "collapsed"
 }
 
-SIDEBAR_HIDDEN = False
+SIDEBAR_HIDDEN = True
 
 from core_logic.main import main
 if __name__ == "__main__":
     main(config=globals())
+
